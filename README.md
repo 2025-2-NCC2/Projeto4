@@ -14,7 +14,8 @@
 ## Descrição
 
 <p align="center">
-<img src="https://mail.google.com/mail/u/0?ui=2&ik=bcc8353067&attid=0.1&permmsgid=msg-f:1843812268355238316&th=1996897d37d239ac&view=fimg&fur=ip&permmsgid=msg-f:1843812268355238316&sz=s0-l75-ft&attbid=ANGjdJ_Wa0MdEV-PJ_sCjK25aJgInsxNKNRi1Mt3d3pRusvubZGFOcabe_jbIg5gUf-HlshY2sRDHIeVbk9DdBlzC-GNclNHG1O1jd0rP0MzTsJKrNUE0fWTAEzoFCg&disp=emb&realattid=ii_mfsntmdn0&zw" alt="NOME DO JOGO" border="0">
+<img src="https://drive.google.com/uc?export=view&id=1DfU80iBe954nq0hGI9cydkUk_ooL4Hfu
+" alt="NOME DO JOGO" border="0">
   Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
 </p>
 
