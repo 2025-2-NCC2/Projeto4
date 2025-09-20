@@ -16,17 +16,8 @@
 <p align="center">
   <img src="https://drive.google.com/uc?export=view&id=1DfU80iBe954nq0hGI9cydkUk_ooL4Hfu" alt="NOME DO JOGO" border="0">
   <br>
-" alt="NOME DO JOGO" border="0">
-  Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
-</p>
-
-
-De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
-<br><br>
-Meu projeto ajuda estudantes FECAP a configurarem seus githubs.
-<br><br>
-May the force be with you!
-<br><br>
+  
+O nosso projeto tem como objetivo apoiar e otimizar a gestão do programa Lideranças Empáticas, uma iniciativa voltada à arrecadação e distribuição de cestas básicas para famílias em situação de vulnerabilidade social. Para isso, desenvolvemos uma plataforma digital que permite o controle organizado das doações recebidas, sejam elas em dinheiro ou em alimentos, e sua respectiva destinação. O sistema contempla dois tipos de acesso: o acesso do gestor, com funções administrativas completas, e o acesso do grupo, com permissões restritas voltadas ao apoio nas ações do projeto.
 
 ## 🛠 Estrutura de pastas
 
