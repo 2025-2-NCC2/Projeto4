@@ -57,13 +57,57 @@ Encontre o index.html na pasta executáveis e execute-o como uma página WEB (at
 
 Para abrir este projeto você necessita das seguintes ferramentas:
 
--<a href="https://www.nodejs.tech/pt-br/download">Node.js</a>, <a href="https://code.visualstudio.com/download">VS Code</a>
+-<a href="https://www.nodejs.tech/pt-br/download">Node.js</a>, <a href="https://code.visualstudio.com/download">VS Code</a>, <a href="https://dev.mysql.com/downloads/workbench/">MySQL Workbench</a>, <a href="https://www.apachefriends.org/pt_br/download.html">XAMPP</a>
 
-```sh
-make install
-npm test
-Coloque código do prompt de comnando se for necessário
+Você pode acessar os arquivos do projeto na pasta abaixo:
+
+👉 [Abrir pasta Dashboard 19-09](./dashboard%2019-09)
+
+### Como fazer o download da pasta
+1. Clique no link acima para abrir a pasta no GitHub.  
+2. Clique no botão verde **Code** (canto superior direito).  
+3. Escolha **Download ZIP** para baixar todos os arquivos do repositório.  
+   - Caso queira apenas essa pasta, após extrair o ZIP, utilize somente a pasta `dashboard 19-09`.
+
+## 🚀 Tutorial para rodar o projeto
+
+### 1. Banco de Dados (MySQL via XAMPP)
+1. Habilite o **MySQL** no painel do **XAMPP**.  
+2. Abra o **MySQL Workbench** (ou outro cliente MySQL).  
+3. Crie uma **nova conexão**.  
+4. Vá até o **Server** e escolha **Import Data**.  
+5. Importe a pasta **MySQL** que está dentro da pasta `dashboard 19-09`.  
+6. Crie a **database** necessária conforme os arquivos importados.  
+
+
+### 2. Configuração do PowerShell e execução do projeto
+No **PowerShell**, rode:
+```powershell
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
+
+Depois, no VSCode, abra a pasta do projeto, que no caso é o `dashboard 19-09` e siga esta ordem de comandos abrindo o terminal no VS Code:
+
+### Instalar dependências
+```powershell
+npm install
+```
+
+### Entrar na pasta backend e rodar o servidor
+```powershell
+cd backend
+npm start
+```
+
+### Em outro terminal, voltar para a pasta dashboard e rodar o front-end
+```powershell
+npm run dev
+```
+
+### 3. Acessar o projeto
+Após o passo acima, o projeto estará disponível no navegador em:
+
+👉 http://localhost:5173
 
 ## 📋 Licença/License
 <a href="https://creativecommons.org/licenses/by/4.0/">Empátech</a> © 2025 by <a href="https://creativecommons.org/licenses/by/4.0/">Rafael</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
@@ -74,5 +118,4 @@ Aqui estão as referências usadas no projeto.
 1. <https://github.com/iuricode/readme-template>
 2. <https://github.com/gabrieldejesus/readme-model>
 3. <https://chooser-beta.creativecommons.org/>
-4. <https://freesound.org/>
 5. <https://www.toptal.com/developers/gitignore>
