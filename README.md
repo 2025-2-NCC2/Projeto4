@@ -57,7 +57,7 @@ Encontre o index.html na pasta executáveis e execute-o como uma página WEB (at
 
 Para abrir este projeto você necessita das seguintes ferramentas:
 
--<a href="https://www.nodejs.tech/pt-br/download">Node.js</a>, <a href="https://code.visualstudio.com/download">VS Code</a>, <a href="https://dev.mysql.com/downloads/workbench/">MySQL Workbench</a>, <a href="https://www.apachefriends.org/pt_br/download.html">XAMPP</a>
+<a href="https://www.nodejs.tech/pt-br/download">Node.js</a>, <a href="https://code.visualstudio.com/download">VS Code</a>, <a href="https://dev.mysql.com/downloads/workbench/">MySQL Workbench</a>, <a href="https://www.apachefriends.org/pt_br/download.html">XAMPP</a>
 
 Você pode acessar os arquivos do projeto na pasta abaixo:
 
