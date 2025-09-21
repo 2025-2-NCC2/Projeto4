@@ -20,7 +20,7 @@ const SelecaoPerfil = ({ onSelect }) => (
         <button onClick={() => onSelect('grupo')} className="group bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
             <div className="flex justify-center text-green-500 dark:text-green-400"><VoluntarioIcon /></div>
             <h2 className="text-2xl font-bold text-gray-800 dark:text-white mt-4">Acesso de Grupo</h2>
-            <p className="text-gray-500 dark:text-gray-400 mt-2">Área para registar doações de alimentos, dinheiro e cadastrar novos integrantes.</p>
+            <p className="text-gray-500 dark:text-gray-400 mt-2">Área para registrar doações de alimentos, dinheiro e cadastrar novos integrantes.</p>
         </button>
     </div>
 );
