@@ -119,6 +119,12 @@ Após o passo acima, o projeto estará disponível no navegador em:
 
 O vídeo demonstrativo está disponível no link a seguir: https://drive.google.com/file/d/1QcDmCTtbyJ8ytsx4OobmMN1AIscKjgGn/view?usp=sharing
 
+## 🔗 Links públicos
+
+Frontend: https://glittering-cranachan-8f8a09.netlify.app/
+
+Backend: https://backend-production-09fb.up.railway.app/
+
 ## 📍 Rotas da API
 
 O backend expõe os seguintes endpoints. O endereço base da API em produção é: https://backend-production-09fb.up.railway.app/api
