@@ -117,7 +117,7 @@ Após o passo acima, o projeto estará disponível no navegador em:
 
 ## 🎬 Vídeo demonstrativo
 
-O vídeo demonstrativo está disponível no link a seguir: [https://drive.google.com/file/d/1QcDmCTtbyJ8ytsx4OobmMN1AIscKjgGn/view?usp=sharing]
+O vídeo demonstrativo está disponível no link a seguir: https://drive.google.com/file/d/1QcDmCTtbyJ8ytsx4OobmMN1AIscKjgGn/view?usp=sharing
 
 ## 📍 Rotas da API
 
