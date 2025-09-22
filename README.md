@@ -56,8 +56,9 @@ Há também 4 pastas que seguem da seguinte forma:
 
 ## 🛠 Instalação
 
-Não há instalação!
-Siga os passos a seguir e execute-o como uma página WEB (através de algum browser).
+Acesse o projeto diretamente do seu navegador, sem precisar instalar nada!
+
+É só clicar no link abaixo: https://glittering-cranachan-8f8a09.netlify.app/
 
 ## 💻 Configuração para Desenvolvimento
 
