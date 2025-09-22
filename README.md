@@ -73,7 +73,7 @@ Você pode acessar os arquivos do projeto na pasta abaixo:
 1. Clique no link acima para abrir a pasta no GitHub.  
 2. Clique no botão verde **Code** (canto superior direito).  
 3. Escolha **Download ZIP** para baixar todos os arquivos do repositório.  
-   - Caso queira apenas essa pasta, após extrair o ZIP, utilize somente a pasta `dashboard 19-09`.
+   - Caso queira apenas essa pasta, após extrair o ZIP, utilize somente a pasta `src`.
 
 ## 🚀 Tutorial para rodar o projeto
 
