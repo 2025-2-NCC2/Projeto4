@@ -82,7 +82,7 @@ Você pode acessar os arquivos do projeto na pasta abaixo:
 2. Abra o **MySQL Workbench** (ou outro cliente MySQL).  
 3. Crie uma **nova conexão**.  
 4. Vá até o **Server** e escolha **Import Data**.  
-5. Importe a pasta **MySQL** que está dentro da pasta `dashboard 19-09`.  
+5. Importe a pasta **MySQL** que está dentro da pasta `src`.  
 6. Crie a **database** necessária conforme os arquivos importados.  
 
 
@@ -92,7 +92,7 @@ No **PowerShell**, rode:
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
-Depois, no VSCode, abra a pasta do projeto, que no caso é o `dashboard 19-09` e siga esta ordem de comandos abrindo o terminal no VS Code:
+Depois, no VSCode, abra a pasta do projeto, que no caso é o `src` e siga esta ordem de comandos abrindo o terminal no VS Code:
 
 ### Instalar dependências
 ```powershell
