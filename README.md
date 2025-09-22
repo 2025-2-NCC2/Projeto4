@@ -22,7 +22,9 @@ O nosso projeto tem como objetivo apoiar e otimizar a gestão do programa Lidera
 A aplicação foi desenvolvida com a tecnologia MERN (MySQL, Express, React, Node.js) e está dividida em duas partes principais:
 
 Frontend: Construído com React.js e estilizado com Tailwind CSS, oferece uma interface de utilizador moderna e responsiva.
+
 Backend: Construído com Node.js e Express.js, funciona como uma API RESTful que lida com toda a lógica de negócio e comunicação com a base de dados.
+
 Base de Dados: Utiliza MySQL para o armazenamento seguro e persistente de todos os dados da aplicação.
 
 ## 🛠 Estrutura de pastas
