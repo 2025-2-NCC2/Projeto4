@@ -115,6 +115,48 @@ Após o passo acima, o projeto estará disponível no navegador em:
 
 👉 http://localhost:5173
 
+## 📍 Rotas da API
+
+O backend expõe os seguintes endpoints. O endereço base da API em produção é: https://backend-production-09fb.up.railway.app/api
+
+### Endpoints GET (Leitura de Dados)
+
+### GET /equipes
+
+Descrição: Retorna a lista de todas as equipes. - Rota Completa: https://backend-production-09fb.up.railway.app/api/equipes
+
+### GET /alunos
+
+Descrição: Retorna a lista de todos os alunos. - Rota Completa: https://backend-production-09fb.up.railway.app/api/alunos
+
+### GET /familias
+
+Descrição: Retorna a lista de todas as famílias. - Rota Completa: https://backend-production-09fb.up.railway.app/api/familias
+
+### GET /estoque
+
+Descrição: Retorna o estado atual do estoque. - Rota Completa: https://backend-production-09fb.up.railway.app/api/estoque
+
+### GET /historicoDoacoes
+
+Descrição: Retorna o histórico de doações em dinheiro. - Rota Completa: https://backend-production-09fb.up.railway.app/api/historicoDoacoes
+
+### GET /transacoes-alimentos
+
+Descrição: Retorna o histórico de transações de alimentos. - Rota Completa: https://backend-production-09fb.up.railway.app/api/transacoes-alimentos
+
+### GET /historicoSaidas
+
+Descrição: Retorna o histórico de saídas de alimentos. - Rota Completa: https://backend-production-09fb.up.railway.app/api/historicoSaidas
+
+### GET /avisos
+
+Descrição: Retorna a lista de todos os avisos. - Rota Completa: https://backend-production-09fb.up.railway.app/api/avisos
+
+### GET /campanhas
+
+Descrição: Retorna a lista de todas as campanhas. - Rota Completa: https://backend-production-09fb.up.railway.app/api/campanhas
+
 ## 📋 Licença/License
 <a href="https://creativecommons.org/licenses/by/4.0/">Empátech</a> © 2025 by <a href="https://creativecommons.org/licenses/by/4.0/">Rafael</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
 ## 🎓 Referências
