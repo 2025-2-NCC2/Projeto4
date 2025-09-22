@@ -19,6 +19,12 @@
   
 O nosso projeto tem como objetivo apoiar e otimizar a gestão do programa Lideranças Empáticas, uma iniciativa voltada à arrecadação e distribuição de cestas básicas para famílias em situação de vulnerabilidade social. Para isso, desenvolvemos uma plataforma digital que permite o controle organizado das doações recebidas, sejam elas em dinheiro ou em alimentos, e sua respectiva destinação. O sistema contempla dois tipos de acesso: o acesso do gestor, com funções administrativas completas, e o acesso do grupo, com permissões restritas voltadas ao apoio nas ações do projeto.
 
+A aplicação foi desenvolvida com a tecnologia MERN (MySQL, Express, React, Node.js) e está dividida em duas partes principais:
+
+Frontend: Construído com React.js e estilizado com Tailwind CSS, oferece uma interface de utilizador moderna e responsiva.
+Backend: Construído com Node.js e Express.js, funciona como uma API RESTful que lida com toda a lógica de negócio e comunicação com a base de dados.
+Base de Dados: Utiliza MySQL para o armazenamento seguro e persistente de todos os dados da aplicação.
+
 ## 🛠 Estrutura de pastas
 
 -Raiz<br>
