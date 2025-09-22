@@ -67,7 +67,7 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 
 Você pode acessar os arquivos do projeto na pasta abaixo:
 
-👉 [Abrir pasta Dashboard 19-09](./dashboard%2019-09)
+👉 [Abrir pasta Src](./src)
 
 ### Como fazer o download da pasta
 1. Clique no link acima para abrir a pasta no GitHub.  
