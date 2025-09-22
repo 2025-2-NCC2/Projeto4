@@ -168,8 +168,8 @@ Descrição: Retorna a lista de todos os avisos. - Rota Completa: https://backen
 Descrição: Retorna a lista de todas as campanhas. - Rota Completa: https://backend-production-09fb.up.railway.app/api/campanhas
 
 
-Acesso a Modelagem de banco de dados 
-👉 [Abrir modelagem de dados](./.Projeto%20em%20Banco%20de%20Dados)
+Acesso a Modelagem de banco de dados 👉
+[Abrir modelagem de dados](/documentos/Entrega%201/Projetos%20em%20Banco%20de%20Dados)
 ## 📋 Licença/License
 <a href="https://creativecommons.org/licenses/by/4.0/">Empátech</a> © 2025 by <a href="https://creativecommons.org/licenses/by/4.0/">Rafael</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
 ## 🎓 Referências
