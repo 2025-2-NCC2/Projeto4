@@ -32,18 +32,18 @@ Base de Dados: Utiliza MySQL para o armazenamento seguro e persistente de todos 
 -Raiz<br>
 |<br>
 |-->documentos<br>
-  |-->Entrega 1 <br>
-     |-->Cálculo - II <br>
-     |-->Desenvolvimento Web Full Stack <br>
-     |-->Gestão Empresarial e Dinâminacas das Organizações <br>
-     |-->Projeto Interdiciplinar Programação Web <br>
-     |-->Projetos em Banco de Dados <br>
-  |-->Entrega 2 <br>
-     |-->Cálculo - II <br>
-     |-->Desenvolvimento Web Full Stack <br>
-     |-->Gestão Empresarial e Dinâminacas das Organizações <br>
-     |-->Projeto Interdiciplinar Programação Web <br>
-     |-->Projetos em Banco de Dados <br>
+ &emsp;|-->Entrega 1 <br>
+     &emsp;|-->Cálculo - II <br>
+     &emsp;|-->Desenvolvimento Web Full Stack <br>
+     &emsp;|-->Gestão Empresarial e Dinâminacas das Organizações <br>
+     &emsp;|-->Projeto Interdiciplinar Programação Web <br>
+     &emsp;|-->Projetos em Banco de Dados <br>
+ &emsp;|-->Entrega 2 <br>
+     &emsp;|-->Cálculo - II <br>
+     &emsp;|-->Desenvolvimento Web Full Stack <br>
+     &emsp;|-->Gestão Empresarial e Dinâminacas das Organizações <br>
+     &emsp;|-->Projeto Interdiciplinar Programação Web <br>
+     &emsp;|-->Projetos em Banco de Dados <br>
 
   &emsp;|-->antigos<br>
   &emsp;|Documentação.docx<br>
