@@ -76,7 +76,7 @@ Você pode acessar os arquivos do projeto na pasta abaixo:
 3. Escolha **Download ZIP** para baixar todos os arquivos do repositório.  
    - Caso queira apenas essa pasta, após extrair o ZIP, utilize somente a pasta `src`.
 
-## 🚀 Tutorial para rodar o projeto
+## 🚀 Tutorial para rodar o projeto localmente
 
 ## 📌 Pré-requisitos
 
