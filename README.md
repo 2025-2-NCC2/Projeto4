@@ -30,7 +30,7 @@ Base de Dados: Utiliza MySQL para o armazenamento seguro e persistente de todos 
 ## 🛠 Estrutura de pastas
 
 - **Raiz**
-  - **documentos**
+  - **Documentos**
     - **Entrega 1**
       - Cálculo - II
       - Desenvolvimento Web Full Stack
