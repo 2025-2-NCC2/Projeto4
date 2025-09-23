@@ -43,20 +43,22 @@ Base de Dados: Utiliza MySQL para o armazenamento seguro e persistente de todos 
       - Gestão Empresarial e Dinâmicas das Organizações
       - Projeto Interdiciplinar Programação Web
       - Projetos em Banco de Dados
-    - antigos
     - Documentação.docx
   - **imagens**
   - **src**
-    - Backend
-    - Frontend
+    - **Entrega 1**
+      - Backend
+      - Frontend
+    - **Entrega 2**
+      - Backend
+      - Frontend
+      
 
 <b>README.MD</b>: Arquivo que serve como guia e explicação geral sobre seu projeto. O mesmo que você está lendo agora.
 
-Há também 4 pastas que seguem da seguinte forma:
+Há também 3 pastas que seguem da seguinte forma:
 
 <b>documentos</b>: Toda a documentação estará nesta pasta.
-
-<b>executáveis</b>: Binários e executáveis do projeto devem estar nesta pasta.
 
 <b>imagens</b>: Imagens do sistema
 
