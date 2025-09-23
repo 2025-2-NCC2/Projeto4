@@ -1,0 +1,9 @@
+Acesso de Gestor
+
+Login: gestor
+Senha: gestor123
+
+Acesso de Grupo
+
+Login: Nome do Grupo, por exemplo: "Equipe Esperança"
+Senha: grupo123
