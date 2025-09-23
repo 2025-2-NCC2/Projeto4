@@ -29,31 +29,26 @@ Base de Dados: Utiliza MySQL para o armazenamento seguro e persistente de todos 
 
 ## 🛠 Estrutura de pastas
 
--Raiz<br>
-|<br>
-|-->documentos<br>
- &emsp;|-->Entrega 1 <br>
-     &emsp;|-->Cálculo - II <br>
-     &emsp;|-->Desenvolvimento Web Full Stack <br>
-     &emsp;|-->Gestão Empresarial e Dinâminacas das Organizações <br>
-     &emsp;|-->Projeto Interdiciplinar Programação Web <br>
-     &emsp;|-->Projetos em Banco de Dados <br>
- &emsp;|-->Entrega 2 <br>
-     &emsp;|-->Cálculo - II <br>
-     &emsp;|-->Desenvolvimento Web Full Stack <br>
-     &emsp;|-->Gestão Empresarial e Dinâminacas das Organizações <br>
-     &emsp;|-->Projeto Interdiciplinar Programação Web <br>
-     &emsp;|-->Projetos em Banco de Dados <br>
-
-  &emsp;|-->antigos<br>
-  &emsp;|Documentação.docx<br>
-|-->imagens<br>
-|-->src<br>
-  &emsp;|-->Backend<br>
-  &emsp;|-->Frontend<br>
-|readme.md<br>
-
-A pasta raiz contem dois arquivos que devem ser alterados:
+- **Raiz**
+  - **documentos**
+    - **Entrega 1**
+      - Cálculo - II
+      - Desenvolvimento Web Full Stack
+      - Gestão Empresarial e Dinâmicas das Organizações
+      - Projeto Interdiciplinar Programação Web
+      - Projetos em Banco de Dados
+    - **Entrega 2**
+      - Cálculo - II
+      - Desenvolvimento Web Full Stack
+      - Gestão Empresarial e Dinâmicas das Organizações
+      - Projeto Interdiciplinar Programação Web
+      - Projetos em Banco de Dados
+    - antigos
+    - Documentação.docx
+  - **imagens**
+  - **src**
+    - Backend
+    - Frontend
 
 <b>README.MD</b>: Arquivo que serve como guia e explicação geral sobre seu projeto. O mesmo que você está lendo agora.
 
