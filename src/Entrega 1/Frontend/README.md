@@ -126,7 +126,7 @@ a execução de scripts foi desativada neste sistema
 2. Execute o comando:
 
    ```powershell
-   Set-ExecutionPolicy RemoteSigned
+   Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
    ```
 
 ---
