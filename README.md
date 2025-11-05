@@ -83,6 +83,8 @@ Você pode acessar os arquivos do projeto na pasta abaixo:
 ## 🎲 Acesso a Modelagem de banco de dados
 👉 [Abrir modelagem de dados](/documentos/Entrega%201/Projetos%20em%20Banco%20de%20Dados)
 
+👉 [Acessar os scripts para criação das tabelas](/documentos/Entrega2%201/Projetos%20em%20Banco%20de%20Dados)
+
 ### Como fazer o download da pasta
 1. Clique no link acima para abrir a pasta no GitHub.  
 2. Clique no botão verde **Code** (canto superior direito).  
