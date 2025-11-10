@@ -68,7 +68,7 @@ Há também 3 pastas que seguem da seguinte forma:
 
 Acesse o projeto diretamente do seu navegador, sem precisar instalar nada!
 
-É só clicar no link abaixo: https://glittering-cranachan-8f8a09.netlify.app/
+É só clicar no link abaixo: https://empatech2.netlify.app
 
 ## 💻 Configuração para Desenvolvimento
 
