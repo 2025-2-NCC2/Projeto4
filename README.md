@@ -58,6 +58,34 @@ A plataforma permite o **controle de doações (dinheiro e alimentos)** e sua **
 
 ---
 
+## 🛠 Estrutura de pastas
+
+- **Raiz**
+  - **Documentos**
+    - **Entrega 1**
+      - Cálculo - II
+      - Desenvolvimento Web Full Stack
+      - Gestão Empresarial e Dinâmicas das Organizações
+      - Projeto Interdiciplinar Programação Web
+      - Projetos em Banco de Dados
+    - **Entrega 2**
+      - Cálculo - II
+      - Desenvolvimento Web Full Stack
+      - Gestão Empresarial e Dinâmicas das Organizações
+      - Projeto Interdiciplinar Programação Web
+      - Projetos em Banco de Dados
+    - Documentação.docx
+  - **imagens**
+  - **src**
+    - **Entrega 1**
+      - Backend
+      - Frontend
+    - **Entrega 2**
+      - Backend
+      - Frontend
+
+---
+
 ## 🧱 Stack de Tecnologia
 
 A aplicação utiliza a **stack PERN**:  
