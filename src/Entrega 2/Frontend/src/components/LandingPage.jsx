@@ -14,10 +14,7 @@ const CloseIcon = () => (
     </svg>
 );
 
-// Esta linha lê a sua variável VITE_API_URL do Netlify
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001/api';
-
-// --- Função de Formatação ---
+// ▼▼▼ FUNÇÃO DE FORMATAÇÃO ▼▼▼
 const formatarValorMonetario = (valor) => {
     const numero = Number(valor) || 0;
     return numero.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
@@ -41,26 +38,17 @@ export default function LandingPage() {
   useEffect(() => {
     const fetchImpacto = async () => {
         try {
-            // Chama a API correta do Render
-            const response = await fetch(`${API_URL}/public/impact`);
-            
+            const response = await fetch('http://localhost:3001/api/public/impact');
             if (response.ok) {
                 const data = await response.json();
-                
-                // Lê as propriedades com maiúsculas,
-                // exatamente como a sua API está a enviar
-                setImpacto({
-                    totalFamilias: data.totalFamilias || 0,
-                    totalItens: data.totalItens || 0,
-                    totalDinheiro: data.totalDinheiro || 0
-                });
+                setImpacto(data);
             }
         } catch (error) {
             console.error("Erro ao buscar dados de impacto:", error);
         }
     };
     fetchImpacto();
-  }, []); // O array vazio garante que isso rode apenas uma vez
+  }, []);
 
   const integrantes = [
     { nome: 'Breno Sales Colaneri', link: 'http://www.linkedin.com/in/breno-sales-colaneri-231b59322' },
@@ -160,8 +148,6 @@ export default function LandingPage() {
           </div>
         </section>
 
-        {/* O resto do seu arquivo ... */}
-        
         <section id="ajudar" className="py-20 bg-white dark:bg-gray-800 transition-colors duration-300">
           <div className="container mx-auto px-6 text-center">
             <h2 className="text-3xl font-bold text-gray-800 dark:text-white">Como Você Pode Ajudar</h2>
@@ -219,3 +205,4 @@ export default function LandingPage() {
     </div>
   );
 }
+

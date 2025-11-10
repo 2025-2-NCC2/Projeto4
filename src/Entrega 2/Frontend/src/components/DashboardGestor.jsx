@@ -1,11 +1,10 @@
 import React, { useState, useMemo } from "react";
 import { useData } from "../context/DataContext";
-// As constantes 'META_DINHEIRO' e 'META_ALIMENTOS' foram removidas daqui
-import { DADOS_INICIAIS_GRAFICO, LIMITE_ESTOQUE_BAIXO } from "../config/constants";
+import { DADOS_INICIAIS_GRAFICO, META_DINHEIRO, META_ALIMENTOS, LIMITE_ESTOQUE_BAIXO } from "../config/constants";
 import NavegacaoAbas from "./NavegacaoAbas";
 import AtividadesRecentes from "./AtividadesRecentes";
 import Filtros from "./Filtros";
-// O import do 'Metas' foi removido
+import Metas from "./Metas";
 import Resumo from "./Resumo";
 import GraficoDoacoes from "./GraficoDoacoes";
 import RankingEquipes from "./RankingEquipes";
@@ -31,129 +30,130 @@ import ListaCampanhas from "./ListaCampanhas";
 import ProgressoCampanha from "./ProgressoCampanha";
 
 export default function DashboardGestor() {
-  // Desestruturando as funções corretas do DataContext
-  const { 
-    logoutAndGoHome, 
-    logoutAndGoToLogin, 
-    equipes, 
-    estoque, 
-    historicoDoacoes, 
-    familias, 
-    campanhas 
-  } = useData();
+  // Desestruturando as funções corretas do DataContext
+  const { 
+    logoutAndGoHome, 
+    logoutAndGoToLogin, 
+    equipes, 
+    estoque, 
+    historicoDoacoes, 
+    familias, 
+    campanhas 
+  } = useData();
 
-  const [abaAtiva, setAbaAtiva] = useState('visaoGeral');
-  const [filtroMes, setFiltroMes] = useState("Todos");
-  const [filtroEquipe, setFiltroEquipe] = useState("Todas");
+  const [abaAtiva, setAbaAtiva] = useState('visaoGeral');
+  const [filtroMes, setFiltroMes] = useState("Todos");
+  const [filtroEquipe, setFiltroEquipe] = useState("Todas");
 
-  const campanhaAtiva = useMemo(() => (campanhas || []).find(c => new Date(c.data_termino) >= new Date()), [campanhas]);
+  const campanhaAtiva = useMemo(() => (campanhas || []).find(c => new Date(c.data_termino) >= new Date()), [campanhas]);
 
-  const dadosFiltrados = useMemo(() => {
-    const doacoesFiltradas = (historicoDoacoes || []).filter(doacao => {
-      if (!doacao.data) return false;
-      const mesDaDoacao = new Date(doacao.data).getMonth();
-      const filtroMesValido = filtroMes === "Todos" || mesDaDoacao === parseInt(filtroMes);
-      const filtroEquipeValido = filtroEquipe === "Todas" || doacao.equipe === filtroEquipe;
-      return filtroMesValido && filtroEquipeValido;
-    });
-    const totalDinheiro = doacoesFiltradas.reduce((acc, doacao) => acc + parseFloat(doacao.valor || 0), 0);
-    const dadosGrafico = [...DADOS_INICIAIS_GRAFICO].map(d => ({ ...d, valor: 0 }));
-    doacoesFiltradas.forEach(doacao => {
-      if (doacao.data && doacao.valor) {
-        const mesIndex = new Date(doacao.data).getMonth();
-        if (!isNaN(mesIndex) && dadosGrafico[mesIndex]) {
-          dadosGrafico[mesIndex].valor += parseFloat(doacao.valor || 0);
-        }
-      }
-    });
-    const equipesCalculadas = (equipes || []).map(equipe => {
-      const doacoesDaEquipe = doacoesFiltradas.filter(d => d.equipe === equipe.nome);
-      const valorTotal = doacoesDaEquipe.reduce((acc, d) => acc + parseFloat(d.valor || 0), 0);
-      const itensTotal = doacoesDaEquipe.reduce((acc, d) => acc + parseInt(d.quantidade || 0), 0);
-      return { ...equipe, valor: valorTotal, itens: itensTotal };
-    });
-    return { totalDinheiro, historicoDoacoes: doacoesFiltradas, dadosGrafico, equipes: equipesCalculadas };
-  }, [historicoDoacoes, filtroMes, filtroEquipe, equipes]);
+  const dadosFiltrados = useMemo(() => {
+    const doacoesFiltradas = (historicoDoacoes || []).filter(doacao => {
+      if (!doacao.data) return false;
+      const mesDaDoacao = new Date(doacao.data).getMonth();
+      const filtroMesValido = filtroMes === "Todos" || mesDaDoacao === parseInt(filtroMes);
+      const filtroEquipeValido = filtroEquipe === "Todas" || doacao.equipe === filtroEquipe;
+      return filtroMesValido && filtroEquipeValido;
+    });
+    const totalDinheiro = doacoesFiltradas.reduce((acc, doacao) => acc + parseFloat(doacao.valor || 0), 0);
+    const dadosGrafico = [...DADOS_INICIAIS_GRAFICO].map(d => ({ ...d, valor: 0 }));
+    doacoesFiltradas.forEach(doacao => {
+      if (doacao.data && doacao.valor) {
+        const mesIndex = new Date(doacao.data).getMonth();
+        if (!isNaN(mesIndex) && dadosGrafico[mesIndex]) {
+          dadosGrafico[mesIndex].valor += parseFloat(doacao.valor || 0);
+        }
+      }
+    });
+    const equipesCalculadas = (equipes || []).map(equipe => {
+      const doacoesDaEquipe = doacoesFiltradas.filter(d => d.equipe === equipe.nome);
+      const valorTotal = doacoesDaEquipe.reduce((acc, d) => acc + parseFloat(d.valor || 0), 0);
+      const itensTotal = doacoesDaEquipe.reduce((acc, d) => acc + parseInt(d.quantidade || 0), 0);
+      return { ...equipe, valor: valorTotal, itens: itensTotal };
+    });
+    return { totalDinheiro, historicoDoacoes: doacoesFiltradas, dadosGrafico, equipes: equipesCalculadas };
+  }, [historicoDoacoes, filtroMes, filtroEquipe, equipes]);
 
-  const totalAlimentos = (estoque || []).reduce((acc, item) => acc + parseInt(item.qtd || 0), 0);
+  const totalAlimentos = (estoque || []).reduce((acc, item) => acc + parseInt(item.qtd || 0), 0);
 
-  return (
-    <div className="p-4 md:p-6 bg-gray-100 dark:bg-gray-900 min-h-screen text-gray-800 dark:text-gray-200 transition-colors duration-300">
-      <header className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
-        <div>
-          <h1 className="text-xl sm:text-2xl font-bold text-green-700 dark:text-green-400">Dashboard - Lideranças Empáticas</h1>
-        </div>
-        <div className="flex items-center gap-4 self-end sm:self-center">
-          <button onClick={logoutAndGoHome} className="text-sm text-gray-600 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 whitespace-nowrap">Voltar ao Site</button>
-          <ThemeToggle />
-          <button onClick={logoutAndGoToLogin} className="bg-red-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-600">Sair</button>
-        </div>
-      </header>
-      <NavegacaoAbas abaAtiva={abaAtiva} setAbaAtiva={setAbaAtiva} />
-      <main>
-        {abaAtiva === 'visaoGeral' && (
-          <div className="space-y-6 mt-6">
-            {campanhaAtiva && <ProgressoCampanha campanha={campanhaAtiva} />}
-            <Filtros filtroMes={filtroMes} setFiltroMes={setFiltroMes} filtroEquipe={filtroEquipe} setFiltroEquipe={setFiltroEquipe} />
-            <Resumo totalDinheiro={dadosFiltrados.totalDinheiro} totalAlimentos={totalAlimentos} familias={(familias || []).length} />
-            
-            {/* ▼▼▼ O BLOCO DE METAS FOI REMOVIDO DESTA ÁREA ▼▼▼ */}
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <GraficoDoacoes dados={dadosFiltrados.dadosGrafico} />
-              <AtividadesRecentes />
-            </div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <GraficoCategorias />
-              <GraficoRegioes />
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <RankingEquipes equipes={dadosFiltrados.equipes} />
-              <RankingAlimentos equipes={dadosFiltrados.equipes} />
-            </div>
-          </div>
-        )}
-        {abaAtiva === 'estoque' && (
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
-            <div className="lg:col-span-2 space-y-6">
-              <EstoqueAlimentos limiteEstoqueBaixo={LIMITE_ESTOQUE_BAIXO} />
-              <HistoricoSaidas />
-              <MontagemCestas />
-            </div>
-            <div className="space-y-6"><RegistroAlimentos /></div>
-          </div>
-        )}
-        {abaAtiva === 'financeiro' && (
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6 lg:items-start">
-            <div className="lg:col-span-2"><HistoricoDoacoes /></div>
-            <DoacoesDinheiro />
-          </div>
-        )}
-        {abaAtiva === 'equipes' && (
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6 lg:items-start">
-            <div className="lg:col-span-2"><ListaIntegrantes /></div>
-            <div className="space-y-6"><CadastroEquipe /><CadastroAluno /></div>
-          </div>
-        )}
-        {abaAtiva === 'familias' && (
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6 lg:items-start">
-            <div className="lg:col-span-2"><ListaFamilias /></div>
-            <CadastroFamilia />
-          </div>
-        )}
-        {abaAtiva === 'campanhas' && (
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6 lg:items-start">
-            <div className="lg:col-span-2"><ListaCampanhas /></div>
-            <CadastroCampanha />
-          </div>
-        )}
-        {abaAtiva === 'comunicacao' && (
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6 lg:items-start">
-            <div className="lg:col-span-2"><MuralAvisos /></div>
-            <CadastroAviso />
-          </div>
-        )}
-      </main>
-    </div>
-  );
+  return (
+    <div className="p-4 md:p-6 bg-gray-100 dark:bg-gray-900 min-h-screen text-gray-800 dark:text-gray-200 transition-colors duration-300">
+      <header className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
+        <div>
+          <h1 className="text-xl sm:text-2xl font-bold text-green-700 dark:text-green-400">Dashboard - Lideranças Empáticas</h1>
+        </div>
+        <div className="flex items-center gap-4 self-end sm:self-center">
+          <button onClick={logoutAndGoHome} className="text-sm text-gray-600 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 whitespace-nowrap">Voltar ao Site</button>
+          <ThemeToggle />
+          <button onClick={logoutAndGoToLogin} className="bg-red-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-600">Sair</button>
+        </div>
+      </header>
+      <NavegacaoAbas abaAtiva={abaAtiva} setAbaAtiva={setAbaAtiva} />
+      <main>
+        {abaAtiva === 'visaoGeral' && (
+          <div className="space-y-6 mt-6">
+            {campanhaAtiva && <ProgressoCampanha campanha={campanhaAtiva} />}
+            <Filtros filtroMes={filtroMes} setFiltroMes={setFiltroMes} filtroEquipe={filtroEquipe} setFiltroEquipe={setFiltroEquipe} />
+            <Resumo totalDinheiro={dadosFiltrados.totalDinheiro} totalAlimentos={totalAlimentos} familias={(familias || []).length} />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <Metas titulo="Meta de Arrecadação (Dinheiro)" valorAtual={dadosFiltrados.totalDinheiro} meta={META_DINHEIRO} unidade="R$" />
+              <Metas titulo="Meta de Arrecadação (Alimentos)" valorAtual={totalAlimentos} meta={META_ALIMENTOS} unidade="Itens" />
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <GraficoDoacoes dados={dadosFiltrados.dadosGrafico} />
+              <AtividadesRecentes />
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <GraficoCategorias />
+              <GraficoRegioes />
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <RankingEquipes equipes={dadosFiltrados.equipes} />
+              <RankingAlimentos equipes={dadosFiltrados.equipes} />
+            </div>
+          </div>
+        )}
+        {abaAtiva === 'estoque' && (
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6 items-start"> {/* <-- CORREÇÃO AQUI */}
+            <div className="lg:col-span-2 space-y-6">
+              <EstoqueAlimentos limiteEstoqueBaixo={LIMITE_ESTOQUE_BAIXO} />
+              <HistoricoSaidas />
+              <MontagemCestas />
+            </div>
+            <div className="space-y-6"><RegistroAlimentos /></div>
+          </div>
+        )}
+        {abaAtiva === 'financeiro' && (
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6 items-start"> {/* <-- CORREÇÃO AQUI */}
+            <div className="lg:col-span-2"><HistoricoDoacoes /></div>
+            <DoacoesDinheiro />
+          </div>
+        )}
+        {abaAtiva === 'equipes' && (
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6 items-start"> {/* <-- CORREÇÃO AQUI */}
+            <div className="lg:col-span-2"><ListaIntegrantes /></div>
+            <div className="space-y-6"><CadastroEquipe /><CadastroAluno /></div>
+          </div>
+        )}
+        {abaAtiva === 'familias' && (
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6 items-start"> {/* <-- CORREÇÃO AQUI */}
+            <div className="lg:col-span-2"><ListaFamilias /></div>
+            <CadastroFamilia />
+          </div>
+        )}
+        {abaAtiva === 'campanhas' && (
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6 items-start"> {/* <-- CORREÇÃO AQUI */}
+            <div className="lg:col-span-2"><ListaCampanhas /></div>
+            <CadastroCampanha />
+          </div>
+        )}
+        {abaAtiva === 'comunicacao' && (
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6 items-start"> {/* <-- CORREÇÃO AQUI */}
+            <div className="lg:col-span-2"><MuralAvisos /></div>
+            <CadastroAviso />
+          </div>
+        )}
+      </main>
+    </div>
+  );
 }

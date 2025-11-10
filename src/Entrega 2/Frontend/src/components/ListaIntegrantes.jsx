@@ -79,20 +79,14 @@ export default function ListaIntegrantes({ equipeEspecifica = null }) {
                 <div className="flex justify-between items-center w-full">
                   <div>
                     <h3 className="font-semibold text-lg text-green-700 dark:text-green-400">{equipe.nome}</h3>
-                    
-                    {/* ▼▼▼ CÓDIGO CORRIGIDO ABAIXO ▼▼▼ */}
-                    {/* As propriedades foram alteradas para minúsculas (ex: equipe.mentornome) 
-                        para corresponder à resposta do driver 'pg' do PostgreSQL. */}
                     <div className="text-xs text-gray-500 dark:text-gray-400 mt-1 space-y-1">
-                      <p><span className="font-bold">Mentor(a):</span> {equipe.mentornome}</p>
+                      <p><span className="font-bold">Mentor(a):</span> {equipe.mentorNome}</p>
                       <div className="flex flex-wrap gap-x-4 gap-y-1">
-                        <p><span className="font-bold">RA:</span> {equipe.mentorra}</p>
-                        <p><span className="font-bold">Telefone:</span> {formatarTelefone(equipe.mentortelefone)}</p>
-                        <p><span className="font-bold">Email:</span> {equipe.mentoremail}</p>
+                        <p><span className="font-bold">RA:</span> {equipe.mentorRa}</p>
+                        <p><span className="font-bold">Telefone:</span> {formatarTelefone(equipe.mentorTelefone)}</p>
+                        <p><span className="font-bold">Email:</span> {equipe.mentorEmail}</p>
                       </div>
                     </div>
-                    {/* ▲▲▲ CÓDIGO CORRIGIDO ACIMA ▲▲▲ */}
-
                   </div>
                   <div className="flex items-center gap-2">
                     <button onClick={() => handleAbrirModalEquipe(equipe)} className="p-2 rounded-full text-blue-500 hover:bg-blue-100 dark:hover:bg-gray-700 transition-colors" title="Editar Equipe"><EditIcon /></button>
@@ -163,3 +157,4 @@ export default function ListaIntegrantes({ equipeEspecifica = null }) {
     </div>
   );
 }
+
