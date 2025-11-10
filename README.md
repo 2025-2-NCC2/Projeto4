@@ -44,6 +44,10 @@
 
 ## 📙 Descrição do Projeto
 
+<p align="center">
+  <img src="https://drive.google.com/uc?export=view&id=1DfU80iBe954nq0hGI9cydkUk_ooL4Hfu" alt="NOME DO JOGO" border="0">
+  <br>
+
 O **EmpáTech** visa apoiar e otimizar a gestão do programa **Lideranças Empáticas**, uma iniciativa voltada à arrecadação e distribuição de cestas básicas para famílias em situação de vulnerabilidade.
 
 A plataforma permite o **controle de doações (dinheiro e alimentos)** e sua **destinação organizada**.
