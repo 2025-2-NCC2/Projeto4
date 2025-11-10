@@ -1,9 +1,9 @@
 Acesso de Gestor
 
-Login: admin@empatech.com
+Login: fecap@empatech.com
 Senha: senha123
 
 Acesso de Grupo
 
 Login: Equipe União
-Senha: 1234
+Senha: senha123
