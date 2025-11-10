@@ -1,10 +1,7 @@
-# 🏫 FECAP - Fundação de Comércio Álvares Penteado
+# FECAP - Fundação de Comércio Álvares Penteado
 
 <p align="center">
-  <a href="https://www.fecap.br/">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZPrRa89Kma0ZZogxm0pi-tCn_TLKeHGVxywp-LXAFGR3B1DPouAJYHgKZGV0XTEf4AE&usqp=CAU" 
-         alt="FECAP - Fundação de Comércio Álvares Penteado" width="150">
-  </a>
+<a href= "https://www.fecap.br/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZPrRa89Kma0ZZogxm0pi-tCn_TLKeHGVxywp-LXAFGR3B1DPouAJYHgKZGV0XTEf4AE&usqp=CAU" alt="FECAP - Fundação de Comércio Álvares Penteado" border="0"></a>
 </p>
 
 ---
@@ -21,9 +18,8 @@
 - [Izabelli Ribeiro dos Santos](https://www.linkedin.com/in/izabelliribeiro/)  
 - [Rafael Chagas Silva](https://www.linkedin.com/in/rafael-chagas-0648a6349/)
 
-### 👨‍🏫 Professores Orientadores
-Kátia Milani Lara Bossi • Cristina Machado Corrêa Leite • Francisco de Souza Escobar •  
-David de Oliveira Lemes • Jésus Gomes
+## 👨‍🏫 Professores Orientadores
+<a href="https://www.linkedin.com/school/fecap/posts/?feedView=all">Kátia Milani Lara Bossi</a>, <a href="https://www.linkedin.com/in/cristina-machado-corr%C3%AAa-leite-630309160/">Cristina Machado Correa Leite</a>, <a href="https://www.linkedin.com/in/francisco-escobar/">Francisco de Souza Escobar</a>, <a href="https://br.linkedin.com/in/dolemes">David de Oliveira Lemes</a>, <a href="https://www.linkedin.com/in/j%C3%A9sus-gomes-83b769108/">Jésus Gomes</a>
 
 ---
 
