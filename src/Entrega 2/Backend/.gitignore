@@ -1,2 +1,9 @@
+# Arquivos de Dependências
+node_modules/
+
+# Arquivos de Log e Erro
+npm-debug.log
+yarn-error.log
+
+# Arquivo de Variáveis de Ambiente
 .env
-node_modules

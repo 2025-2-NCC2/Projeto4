@@ -9,8 +9,8 @@ const app = express();
 const uploadsDir = './uploads';
 if (!fs.existsSync(uploadsDir)){ fs.mkdirSync(uploadsDir); }
 
-// --- Configuração de CORS (Atualizado) ---
-// Lista de origens permitidas (seu site no Netlify e seu PC local)
+// --- Configuração de CORS ---
+// Esta configuração está perfeita e já inclui seu site Netlify.
 const allowedOrigins = [
   'https://empatech2.netlify.app', // Sua URL de produção
   'http://localhost:5173'           // Sua URL de desenvolvimento
@@ -32,11 +32,15 @@ app.use(cors(corsOptions));
 app.use(express.json()); // Middleware para parsear JSON
 
 // --- Servir Arquivos Estáticos ---
-// Permite que o frontend acesse os arquivos na pasta /uploads
-// Ex: https://seu-backend.railway.app/uploads/nome-do-arquivo.jpg
+// IMPORTANTE: O Render tem um "sistema de arquivos efêmero".
+// Isso significa que qualquer arquivo salvo na pasta /uploads será APAGADO
+// sempre que o servidor reiniciar. Esta linha está correta, mas
+// a solução de longo prazo é usar um serviço como o Amazon S3.
 app.use('/uploads', express.static('uploads'));
 
 // --- Importar Rotas ---
+// Estas rotas não mudam. O Express não se importa
+// se o controller está usando MySQL ou PostgreSQL.
 const authRoutes = require('./routes/authRoutes');
 const dataRoutes = require('./routes/dataRoutes');
 
@@ -45,7 +49,8 @@ app.use('/api/auth', authRoutes); // Rotas de autenticação
 app.use('/api', dataRoutes);      // Rotas de dados da aplicação
 
 // --- Iniciar Servidor ---
-const PORT = process.env.PORT || 3001; // Correto para Railway
+// Esta linha é 100% compatível com o Render.
+const PORT = process.env.PORT || 3001; 
 app.listen(PORT, () => {
   console.log(`🚀 Servidor a correr na porta: ${PORT}`);
 });

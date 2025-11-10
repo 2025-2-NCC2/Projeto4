@@ -1,25 +1,34 @@
-const mysql = require('mysql2');
+// 1. Importamos o 'pg' (PostgreSQL) em vez do 'mysql2'
+const { Pool } = require('pg');
+
+// 2. Carregamos as variáveis de ambiente (para desenvolvimento local)
 require('dotenv').config();
 
-// --- Ligação à Base de Dados ---
-const db = mysql.createConnection({
-    host: process.env.DB_HOST,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_DATABASE,
-    port: process.env.DB_PORT || 3306,
-    waitForConnections: true,
-    connectionLimit: 10,
-    queueLimit: 0
+// 3. O driver 'pg' é inteligente. Ele procura automaticamente
+//    a variável 'DATABASE_URL'. O Render nos dá essa variável
+//    automaticamente na produção.
+const connectionString = process.env.DATABASE_URL;
+
+// 4. Criamos um 'Pool' de conexões. É o equivalente
+//    ao 'createPool' do MySQL e é muito mais eficiente.
+const pool = new Pool({
+  connectionString: connectionString,
+  // 5. O Render exige conexões SSL. Esta linha é obrigatória.
+  //    (Mas a desativa localmente se a DATABASE_URL não estiver definida)
+  ssl: connectionString ? { rejectUnauthorized: false } : false
 });
 
-db.connect(err => {
-    if (err) {
-        console.error('❌ ERRO ao conectar ao MySQL:', err);
-        return;
-    }
-    console.log('✅ Backend conectado ao MySQL com sucesso!');
+// 6. Teste de conexão (Opcional, mas recomendado)
+//    Tentamos pegar um cliente do pool para ver se a conexão funciona.
+pool.connect((err, client, release) => {
+  if (err) {
+    return console.error('❌ ERRO ao conectar ao PostgreSQL:', err.stack);
+  }
+  client.release(); // Libera o cliente de volta para o pool
+  console.log('✅ Backend conectado ao PostgreSQL com sucesso!');
 });
 
-module.exports = db;
-export default pool;
+// 7. Exportamos o 'pool' no formato CommonJS.
+//    Seus controllers (authController, dataController) agora usarão
+//    'db.query()' da mesma forma que antes, mas será o pool do 'pg'.
+module.exports = pool;
