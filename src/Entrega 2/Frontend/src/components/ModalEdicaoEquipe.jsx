@@ -21,12 +21,14 @@ export default function ModalEdicaoEquipe({ equipeParaEditar, onClose }) {
 
     useEffect(() => {
         if (equipeParaEditar) {
+            {/* Lendo as propriedades em minúsculas (ex: mentornome) 
+                que vêm do backend (PostgreSQL). */}
             setNome(equipeParaEditar.nome || '');
-            setMentorNome(equipeParaEditar.mentorNome || '');
-            setMentorRa(equipeParaEditar.mentorRa || '');
-            setMentorEmail(equipeParaEditar.mentorEmail || '');
+            setMentorNome(equipeParaEditar.mentornome || '');
+            setMentorRa(equipeParaEditar.mentorra || '');
+            setMentorEmail(equipeParaEditar.mentoremail || '');
             // Formata o telefone ao carregar os dados
-            setMentorTelefone(formatarTelefone(equipeParaEditar.mentorTelefone));
+            setMentorTelefone(formatarTelefone(equipeParaEditar.mentortelefone));
         }
     }, [equipeParaEditar]);
 
@@ -117,6 +119,7 @@ export default function ModalEdicaoEquipe({ equipeParaEditar, onClose }) {
                             </div>
                         </div>
                         <div>
+                            {/* ▼▼▼ ERRO DE DIGITAÇÃO CORRIGIDO AQUI ▼▼▼ */}
                             <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">Email do Mentor</label>
                             <input
                                 type="email"
@@ -141,4 +144,3 @@ export default function ModalEdicaoEquipe({ equipeParaEditar, onClose }) {
         </div>
     );
 }
-

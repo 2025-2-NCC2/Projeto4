@@ -1,0 +1,6 @@
+# Redirecionamento para Single Page Applications (SPAs)
+# Isto garante que o React Router controle todas as rotas
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
