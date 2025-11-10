@@ -358,17 +358,17 @@ Registra entrada/saída de alimentos (`form-data`):
 
 ---
 
-## 📋 Licença
+## 📋 Licença/License
 
-<a href="http://creativecommons.org/licenses/by/4.0/">EmpáTech</a> © 2025  
-por [Rafael Chagas Silva](https://www.linkedin.com/in/rafael-chagas-0648a6349/)  
-Licenciado sob [Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0/)
+<a href="https://creativecommons.org/licenses/by/4.0/">Empátech</a> © 2025 by <a href="https://creativecommons.org/licenses/by/4.0/">Rafael</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
 
 ---
 
 ## 🎓 Referências
 
-1. https://github.com/iuricode/readme-template  
-2. https://github.com/gabrieldejesus/readme-model  
-3. https://chooser-beta.creativecommons.org/  
-4. https://www.toptal.com/developers/gitignore
+Aqui estão as referências usadas no projeto.
+
+1. <https://github.com/iuricode/readme-template>
+2. <https://github.com/gabrieldejesus/readme-model>
+3. <https://chooser-beta.creativecommons.org/>
+5. <https://www.toptal.com/developers/gitignore>
