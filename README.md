@@ -369,7 +369,7 @@ Registra entrada/saída de alimentos (`form-data`):
 
 ## 🎬 Vídeo Demonstrativo
 
-🎥 [Assistir no Google Drive](https://drive.google.com/file/d/1QcDmCTtbyJ8ytsx4OobmMN1AIscKjgGn/view?usp=sharing)
+🎥 [Assistir no Google Drive](https://drive.google.com/file/d/17di-eQq73xvUt2wJR-0uAiEdZFbDUKIE/view?usp=sharing)
 
 ---
 
