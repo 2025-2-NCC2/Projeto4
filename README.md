@@ -24,21 +24,28 @@
 ---
 
 ## 📖 Índice
-1. [Descrição do Projeto](#-descrição-do-projeto)  
-2. [Tecnologias Utilizadas](#️-tecnologias-utilizadas)  
-3. [Estrutura do Projeto](#-estrutura-do-projeto)  
-4. [Aplicação em Produção](#-aplicação-em-produção-links)  
-5. [Como Executar o Projeto Localmente](#️-como-executar-o-projeto-localmente)  
-   - [Pré-requisitos](#-pré-requisitos)  
-   - [Configuração do Banco de Dados](#-configuração-do-banco-de-dados-postgresql)  
-   - [Configuração do Backend](#-configuração-do-backend-servidor)  
-   - [Configuração do Frontend](#-configuração-do-frontend-aplicação-react)  
-   - [Executando a Aplicação](#-executando-a-aplicação)  
-6. [Documentação da API](#-documentação-da-api)  
-7. [Modelagem de Dados e Documentos](#-modelagem-de-dados-e-documentos)  
-8. [Vídeo Demonstrativo](#-vídeo-demonstrativo)  
-9. [Licença](#-licença)  
-10. [Referências](#-referências)
+
+1. [📙 Descrição do Projeto](#-descrição-do-projeto)  
+2. [🛠 Estrutura de Pastas](#-estrutura-de-pastas)  
+3. [🧱 Stack de Tecnologia](#-stack-de-tecnologia)  
+4. [🛠 Instalação](#-instalação)  
+5. [📁 Estrutura do Projeto](#-estrutura-do-projeto)  
+6. [🚀 Aplicação em Produção (Links)](#-aplicação-em-produção-links)  
+7. [⚙️ Como Executar o Projeto Localmente](#️-como-executar-o-projeto-localmente)  
+   - [📌 Pré-requisitos](#-pré-requisitos)  
+   - [1️⃣ Clonar o Repositório](#1️⃣-clonar-o-repositório)  
+   - [2️⃣ Configuração do Banco de Dados (PostgreSQL)](#2️⃣-configuração-do-banco-de-dados-postgresql)  
+   - [3️⃣ Configuração do Backend (Servidor)](#3️⃣-configuração-do-backend-servidor)  
+   - [4️⃣ Configuração do Frontend (Aplicação React)](#4️⃣-configuração-do-frontend-aplicação-react)  
+   - [5️⃣ Executando a Aplicação](#5️⃣-executando-a-aplicação)  
+8. [🔑 Documentação da API](#-documentação-da-api)  
+   - [🧠 URL Base](#-url-base)  
+   - [🔒 Autenticação (Bearer Token)](#-autenticação-bearer-token)  
+   - [📡 Endpoints da API](#-endpoints-da-api)  
+9. [🎲 Modelagem de Dados e Documentos](#-modelagem-de-dados-e-documentos)  
+10. [🎬 Vídeo Demonstrativo](#-vídeo-demonstrativo)  
+11. [📋 Licença / License](#-licençalicense)  
+12. [🎓 Referências](#-referências)
 
 ---
 
