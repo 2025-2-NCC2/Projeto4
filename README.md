@@ -100,6 +100,14 @@ A aplicação utiliza a **stack PERN**:
 
 ---
 
+## 🛠 Instalação
+
+Acesse o projeto diretamente do seu navegador, sem precisar instalar nada!
+
+É só clicar no link abaixo: https://empatech2.netlify.app
+
+---
+
 ## 📁 Estrutura do Projeto
 
 ```
