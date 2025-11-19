@@ -4,28 +4,66 @@
 <a href= "https://www.fecap.br/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZPrRa89Kma0ZZogxm0pi-tCn_TLKeHGVxywp-LXAFGR3B1DPouAJYHgKZGV0XTEf4AE&usqp=CAU" alt="FECAP - Fundação de Comércio Álvares Penteado" border="0"></a>
 </p>
 
-# Lideranças Empáticas
+---
 
-## EmpáTech
+# 💡 Projeto EmpáTech  
+### Programa: **Lideranças Empáticas**
 
-## Integrantes: <a href="https://www.linkedin.com/in/breno-sales-colaneri-231b59322/">Breno Sales Colaneri</a>, <a href="https://www.linkedin.com/in/guilherme-le%C3%A3o-277053347/">Guilherme Leão Rodrigues</a>, <a href="www.linkedin.com/in/izabelliribeiro">Izabelli Ribeiro dos Santos</a>, <a href="https://www.linkedin.com/in/rafael-chagas-0648a6349/">Rafael Chagas Silva</a>
-## Professores Orientadores: <a href="https://www.linkedin.com/school/fecap/posts/?feedView=all">Kátia Milani Lara Bossi</a>, <a href="https://www.linkedin.com/in/cristina-machado-corr%C3%AAa-leite-630309160/">Cristina Machado Correa Leite</a>, <a href="https://www.linkedin.com/in/francisco-escobar/">Francisco de Souza Escobar</a>, <a href="https://br.linkedin.com/in/dolemes">David de Oliveira Lemes</a>, <a href="https://www.linkedin.com/in/j%C3%A9sus-gomes-83b769108/">Jésus Gomes</a>
+---
 
-## Descrição
+## 👥 Integrantes
+
+- [Breno Sales Colaneri](https://www.linkedin.com/in/breno-sales-colaneri-231b59322/)  
+- [Guilherme Leão Rodrigues](https://www.linkedin.com/in/guilherme-le%C3%A3o-277053347/)  
+- [Izabelli Ribeiro dos Santos](https://www.linkedin.com/in/izabelliribeiro/)  
+- [Rafael Chagas Silva](https://www.linkedin.com/in/rafael-chagas-0648a6349/)
+
+## 👨‍🏫 Professores Orientadores
+<a href="https://www.linkedin.com/school/fecap/posts/?feedView=all">Kátia Milani Lara Bossi</a>, <a href="https://www.linkedin.com/in/cristina-machado-corr%C3%AAa-leite-630309160/">Cristina Machado Correa Leite</a>, <a href="https://www.linkedin.com/in/francisco-escobar/">Francisco de Souza Escobar</a>, <a href="https://br.linkedin.com/in/dolemes">David de Oliveira Lemes</a>, <a href="https://www.linkedin.com/in/j%C3%A9sus-gomes-83b769108/">Jésus Gomes</a>
+
+---
+
+## 📖 Índice
+
+1. [📙 Descrição do Projeto](#-descrição-do-projeto)  
+2. [🛠 Estrutura de Pastas](#-estrutura-de-pastas)  
+3. [🧱 Stack de Tecnologia](#-stack-de-tecnologia)  
+4. [🛠 Instalação](#-instalação)  
+5. [📁 Estrutura do Projeto](#-estrutura-do-projeto)  
+6. [🚀 Aplicação em Produção (Links)](#-aplicação-em-produção-links)  
+7. [⚙️ Como Executar o Projeto Localmente](#️-como-executar-o-projeto-localmente)  
+   - [📌 Pré-requisitos](#-pré-requisitos)  
+   - [1️⃣ Clonar o Repositório](#1️⃣-clonar-o-repositório)  
+   - [2️⃣ Configuração do Banco de Dados (PostgreSQL)](#2️⃣-configuração-do-banco-de-dados-postgresql)  
+   - [3️⃣ Configuração do Backend (Servidor)](#3️⃣-configuração-do-backend-servidor)  
+   - [4️⃣ Configuração do Frontend (Aplicação React)](#4️⃣-configuração-do-frontend-aplicação-react)  
+   - [5️⃣ Executando a Aplicação](#5️⃣-executando-a-aplicação)  
+8. [🔑 Documentação da API](#-documentação-da-api)  
+   - [🧠 URL Base](#-url-base)  
+   - [🔒 Autenticação (Bearer Token)](#-autenticação-bearer-token)  
+   - [📡 Endpoints da API](#-endpoints-da-api)  
+9. [🎲 Modelagem de Dados e Documentos](#-modelagem-de-dados-e-documentos)  
+10. [🎬 Vídeo Demonstrativo](#-vídeo-demonstrativo)  
+11. [📋 Licença / License](#-licençalicense)  
+12. [🎓 Referências](#-referências)
+
+---
+
+## 📙 Descrição do Projeto
 
 <p align="center">
   <img src="https://drive.google.com/uc?export=view&id=1DfU80iBe954nq0hGI9cydkUk_ooL4Hfu" alt="NOME DO JOGO" border="0">
   <br>
-  
-O nosso projeto tem como objetivo apoiar e otimizar a gestão do programa Lideranças Empáticas, uma iniciativa voltada à arrecadação e distribuição de cestas básicas para famílias em situação de vulnerabilidade social. Para isso, desenvolvemos uma plataforma digital que permite o controle organizado das doações recebidas, sejam elas em dinheiro ou em alimentos, e sua respectiva destinação. O sistema contempla dois tipos de acesso: o acesso do gestor, com funções administrativas completas, e o acesso do grupo, com permissões restritas voltadas ao apoio nas ações do projeto.
 
-A aplicação foi desenvolvida com a tecnologia MERN (MySQL, Express, React, Node.js) e está dividida em duas partes principais:
+O **EmpáTech** visa apoiar e otimizar a gestão do programa **Lideranças Empáticas**, uma iniciativa voltada à arrecadação e distribuição de cestas básicas para famílias em situação de vulnerabilidade.
 
-Frontend: Construído com React.js e estilizado com Tailwind CSS, oferece uma interface de utilizador moderna e responsiva.
+A plataforma permite o **controle de doações (dinheiro e alimentos)** e sua **destinação organizada**.
 
-Backend: Construído com Node.js e Express.js, funciona como uma API RESTful que lida com toda a lógica de negócio e comunicação com a base de dados.
+### Perfis de Acesso
+- **Dashboard do Gestor:** acesso completo (equipes, voluntários, famílias, finanças, campanhas e comunicados).  
+- **Dashboard do Grupo:** acesso restrito (gerir equipe e registrar doações).
 
-Base de Dados: Utiliza MySQL para o armazenamento seguro e persistente de todos os dados da aplicação.
+---
 
 ## 🛠 Estrutura de pastas
 
@@ -52,230 +90,294 @@ Base de Dados: Utiliza MySQL para o armazenamento seguro e persistente de todos 
     - **Entrega 2**
       - Backend
       - Frontend
-      
 
-<b>README.MD</b>: Arquivo que serve como guia e explicação geral sobre seu projeto. O mesmo que você está lendo agora.
+---
 
-Há também 3 pastas que seguem da seguinte forma:
+## 🧱 Stack de Tecnologia
 
-<b>documentos</b>: Toda a documentação estará nesta pasta.
+A aplicação utiliza a **stack PERN**:  
+(PostgreSQL, Express, React, Node.js)
 
-<b>imagens</b>: Imagens do sistema.
+| Camada | Tecnologia | Descrição |
+|--------|-------------|-----------|
+| **Frontend** | React.js (Vite) + Tailwind CSS | Interface moderna e responsiva |
+| **Backend** | Node.js + Express.js | API RESTful e autenticação JWT |
+| **Banco de Dados** | PostgreSQL | Armazenamento de dados |
+| **Deploy** | Render (API) e Netlify (Frontend) | Hospedagem gratuita e contínua |
 
-<b>src</b>: Pasta que contém o código fonte.
+---
 
 ## 🛠 Instalação
 
 Acesse o projeto diretamente do seu navegador, sem precisar instalar nada!
 
-É só clicar no link abaixo: https://glittering-cranachan-8f8a09.netlify.app/
-
-## 💻 Configuração para Desenvolvimento
-
-Para abrir este projeto você necessita das seguintes ferramentas:
-
-<a href="https://www.nodejs.tech/pt-br/download">Node.js</a>, <a href="https://code.visualstudio.com/download">VS Code</a>, <a href="https://dev.mysql.com/downloads/workbench/">MySQL Workbench</a>, <a href="https://www.apachefriends.org/pt_br/download.html">XAMPP</a>
-
-Você pode acessar os arquivos do projeto na pasta abaixo:
-
-👉 [Abrir pasta Src](./src)
-
-## 🎲 Acesso a Modelagem de banco de dados
-👉 [Abrir modelagem de dados](/documentos/Entrega%201/Projetos%20em%20Banco%20de%20Dados)
-
-👉 [Abrir scripts para criação das tabelas](/documentos/Entrega%202/Projetos%20em%20Banco%20de%20Dados)
-
-### Como fazer o download da pasta
-1. Clique no link acima para abrir a pasta no GitHub.  
-2. Clique no botão verde **Code** (canto superior direito).  
-3. Escolha **Download ZIP** para baixar todos os arquivos do repositório.  
-   - Caso queira apenas essa pasta, após extrair o ZIP, utilize somente a pasta `src`.
-
-## 🚀 Tutorial para rodar o projeto localmente
-
-## 📌 Pré-requisitos
-
-Antes de começar, certifique-se de que possui os seguintes programas instalados no seu computador:
-
-| Software              | Descrição                                                                 |
-|-----------------------|---------------------------------------------------------------------------|
-| 🖥️ **Visual Studio Code** | Editor de código principal.                                              |
-| 🟢 **Node.js (LTS)**      | Ambiente de execução para backend e frontend.                          |
-| 🐬 **XAMPP** (ou outro servidor MySQL) | Inclui servidor MySQL e Apache.                         |
-| 🛠️ **MySQL Workbench** (opcional) | Ferramenta visual para gestão do banco de dados.             |
+É só clicar no link abaixo: https://empatech2.netlify.app
 
 ---
 
-## ⚙️ Instalação e Configuração
+## 📁 Estrutura do Projeto
 
-### 1. 📂 Obtendo o Código do Projeto
-1. **Descompacte o projeto**: localize o arquivo `dashboard local.zip` e extraia-o em uma pasta de sua preferência.  
-2. **Abra no VS Code**: abra a pasta extraída (`dashboard local`) no **Visual Studio Code**.
-
----
-
-### 2. 🐬 Configurando a Base de Dados
-1. **Inicie o XAMPP**: abra o painel de controlo do XAMPP e inicie os módulos **Apache** e **MySQL**.
-2. **Importe o backup da base de dados**:
-   - Abra o **MySQL Workbench** e conecte-se ao servidor local (`localhost`).
-   - Vá até **Server > Data Import**.
-   - Selecione a opção **Import from Self-Contained File**.
-   - Clique em **...** e selecione o arquivo `backup empatech_db.sql` que está na pasta do projeto.
-   - Na seção **Default Schema to be Imported to**, escolha **New** e digite `empatech_db`.
-   - Clique em **Start Import**.  
-   Isso criará automaticamente a base de dados `empatech_db` com todas as tabelas e dados.
-
----
-
-### 3. 🖥️ Configurando o Backend (Servidor)
-1. Abra um **terminal no VS Code**:  
-   Menu superior → `Terminal` → `New Terminal`.
-2. Navegue até a pasta do backend:
-
-   ```bash
-   cd backend
-   ```
-3. Instale as dependências:
-
-   ```bash
-   npm install
-   ```
-4. Crie um arquivo `.env` dentro da pasta `backend` com o seguinte conteúdo:
-
-   ```env
-   DB_HOST=localhost
-   DB_USER=root
-   DB_PASSWORD=
-   DB_DATABASE=empatech_db
-   DB_PORT=3306
-   FRONTEND_URL=http://localhost:5173
-   ```
+```
+empatech-projeto/
+├── backend/
+│   ├── config/
+│   │   └── db.js              # Conexão com PostgreSQL
+│   ├── controllers/
+│   │   ├── authController.js  # Login e registro
+│   │   └── dataController.js  # CRUD de dados
+│   ├── middleware/
+│   │   └── authMiddleware.js  # Validação de JWT
+│   ├── routes/
+│   │   ├── authRoutes.js
+│   │   └── dataRoutes.js
+│   ├── uploads/               # Uploads de comprovantes
+│   ├── .env.example
+│   └── server.js
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── context/
+│   │   ├── config/
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── .env.example
+│   └── package.json
+│
+└── README.md
+```
 
 ---
 
-### 4. ⚛️ Configurando o Frontend (Aplicação React)
-1. Abra um **segundo terminal** no VS Code.
-2. Navegue até a pasta do frontend:
+## 🚀 Aplicação em Produção (Links)
 
-   ```bash
-   cd frontend
-   ```
-3. Instale as dependências:
-
-   ```bash
-   npm install
-   ```
-4. Crie um arquivo `.env` dentro da pasta `frontend` com o seguinte conteúdo:
-
-   ```env
-   VITE_API_URL=http://localhost:3001/api
-   ```
+| Ambiente | URL |
+|-----------|-----|
+| 🌐 **Frontend (Netlify)** | https://empatech2.netlify.app/ |
+| ⚙️ **Backend (Render)** | https://empatech-api.onrender.com/api |
 
 ---
 
-## 🚀 Rodando o Projeto
+## ⚙️ Como Executar o Projeto Localmente
 
-### 1. Iniciar o Backend
-No terminal da pasta `backend`, execute:
+### 📌 Pré-requisitos
 
+| Requisito | Descrição |
+|------------|------------|
+| **Node.js (LTS)** | Ambiente de execução |
+| **Git** | Controle de versão |
+| **VS Code** | Editor de código |
+| **PostgreSQL** | Banco de dados |
+| **PgAdmin / DBeaver** | Gerenciador SQL visual |
+
+---
+
+### 1️⃣ Clonar o Repositório
+
+```bash
+git clone https://github.com/BrenoColaneri/empatech-db.git
+cd empatech-db
+```
+
+---
+
+### 2️⃣ Configuração do Banco de Dados (PostgreSQL)
+
+1. Inicie o **PostgreSQL** local.  
+2. Crie o banco:
+   - Nome recomendado: `empatech_db`
+3. Execute o **script SQL** que está na pasta `documentos/`.
+4. (Opcional) Importe o arquivo de backup `.sql` caso exista.
+
+---
+
+### 3️⃣ Configuração do Backend (Servidor)
+
+```bash
+cd backend
+npm install
+```
+
+Crie um arquivo `.env` com o seguinte conteúdo:
+
+```env
+DATABASE_URL=postgresql://USUARIO:SENHA@localhost:5432/empatech_db
+JWT_SECRET=meu_segredo_super_secreto_123
+FRONTEND_URL=http://localhost:5173
+```
+
+---
+
+### 4️⃣ Configuração do Frontend (Aplicação React)
+
+```bash
+cd frontend
+npm install
+```
+
+Crie o arquivo `.env`:
+
+```env
+VITE_API_URL=http://localhost:3001/api
+```
+
+---
+
+### 5️⃣ Executando a Aplicação
+
+**Terminal 1 – Backend**
 ```bash
 npm start
 ```
+> ✅ Backend conectado ao PostgreSQL com sucesso!
 
-Você deverá ver a mensagem:
-
-```
-✅ Backend conectado ao MySQL com sucesso!
-```
-
-### 2. Iniciar o Frontend
-No terminal da pasta `frontend`, execute:
-
+**Terminal 2 – Frontend**
 ```bash
 npm run dev
 ```
-
-O navegador abrirá automaticamente em:  
-👉 [http://localhost:5173](http://localhost:5173)
+> Abra: http://localhost:5173
 
 ---
 
-## 🛠️ Solução de Problemas (Windows PowerShell)
+## 🔑 Documentação da API
 
-Se, ao executar `npm start` ou `npm run dev`, aparecer o erro:
+### 🧠 URL Base
+| Ambiente | URL |
+|-----------|-----|
+| **Local** | http://localhost:3001/api |
+| **Produção** | https://empatech-api.onrender.com/api |
 
-```
-a execução de scripts foi desativada neste sistema
-```
-
-### 🔧 Como resolver:
-1. Abra o **PowerShell como Administrador**:
-   - Menu Iniciar → Procurar por *PowerShell* → Botão direito → *Executar como administrador*.
-2. Execute o comando:
-
-   ```powershell
-   Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-   ```
+### 🔒 Autenticação (Bearer Token)
+- A maioria das rotas exige **JWT Token**.  
+- O token é obtido após o login (rota `/api/auth/login/...`).  
+- Envie-o no cabeçalho:  
+  ```
+  Authorization: Bearer <seu_token>
+  ```
 
 ---
 
-✅ Agora o **EmpáTech** está rodando 100% no seu ambiente local! 🎉
+## 📡 Endpoints da API
 
+### 🧩 1. Autenticação (`/api/auth`)
 
-## 🎬 Vídeo demonstrativo
+#### POST `/login/gestor`
+Autentica um gestor.  
+**Body:**
+```json
+{
+  "email": "admin@empatech.com",
+  "senha": "admin123"
+}
+```
 
-O vídeo demonstrativo está disponível no link a seguir: https://drive.google.com/file/d/1QcDmCTtbyJ8ytsx4OobmMN1AIscKjgGn/view?usp=sharing
+#### POST `/login/grupo`
+Autentica uma equipe.  
+**Body:**
+```json
+{
+  "nomeEquipe": "Equipe União",
+  "senha": "senha123"
+}
+```
 
-## 🔗 Links públicos
+#### POST `/register/grupo`
+Registra nova equipe (apenas Gestor).  
+**Body:**
+```json
+{
+  "nome": "Equipe Nova",
+  "senha": "senhaNova123",
+  "mentorNome": "Nome do Mentor",
+  "mentorRa": "12345678",
+  "mentorEmail": "mentor@email.com",
+  "mentorTelefone": "11987654321"
+}
+```
 
-Frontend: https://glittering-cranachan-8f8a09.netlify.app/
+---
 
-Backend: https://backend-production-09fb.up.railway.app/
+### 🌍 2. Rota Pública (`/api/public`)
 
-## 📍 Rotas da API
+#### GET `/impact`
+Retorna dados públicos de impacto.
+```json
+{
+  "totalFamilias": "6",
+  "totalItens": "25",
+  "totalDinheiro": "500.00"
+}
+```
 
-O backend expõe os seguintes endpoints. O endereço base da API em produção é: https://backend-production-09fb.up.railway.app/api
+---
 
-### Endpoints GET (Leitura de Dados)
+### 📦 3. Rotas Protegidas (Requer Token)
 
-### GET /equipes
+#### GET `/equipes`
+Lista todas as equipes.
 
-Descrição: Retorna a lista de todas as equipes. - Rota Completa: https://backend-production-09fb.up.railway.app/api/equipes
+#### PUT `/equipes/:id`
+Atualiza uma equipe.
+```json
+{
+  "nome": "Equipe União (Editada)",
+  "mentorNome": "Novo Nome",
+  "mentorEmail": "novo@email.com"
+}
+```
 
-### GET /alunos
+#### DELETE `/equipes/:id`
+Remove uma equipe e seus membros.
 
-Descrição: Retorna a lista de todos os alunos. - Rota Completa: https://backend-production-09fb.up.railway.app/api/alunos
+#### GET `/alunos`
+Lista todos os alunos.
 
-### GET /familias
+#### POST `/alunos`
+Registra um novo aluno.
+```json
+{
+  "nome": "Novo Aluno",
+  "ra": "11223344",
+  "email": "aluno@email.com",
+  "telefone": "11922223333",
+  "equipe": "Equipe União"
+}
+```
 
-Descrição: Retorna a lista de todas as famílias. - Rota Completa: https://backend-production-09fb.up.railway.app/api/familias
+#### POST `/doacoes`
+Registra doação em dinheiro (`form-data`):
+- `valor` (Number)  
+- `data` (String)  
+- `doador` (String)  
+- `modo` (PIX, Transferência, etc.)  
+- `comprovante` (File)
 
-### GET /estoque
+#### POST `/transacoes-alimentos`
+Registra entrada/saída de alimentos (`form-data`):
+- `tipo` ("Entrada" ou "Saida")  
+- `itens` (JSON string)  
+- `equipe` ou `destino`  
 
-Descrição: Retorna o estado atual do estoque. - Rota Completa: https://backend-production-09fb.up.railway.app/api/estoque
+---
 
-### GET /historicoDoacoes
+## 🎲 Modelagem de Dados e Documentos
 
-Descrição: Retorna o histórico de doações em dinheiro. - Rota Completa: https://backend-production-09fb.up.railway.app/api/historicoDoacoes
+📂 [Abrir modelagem de dados](/documentos/Entrega%201/Projetos%20em%20Banco%20de%20Dados)  
+📂 [Abrir scripts SQL](/documentos/Entrega%202/Projetos%20em%20Banco%20de%20Dados)
 
-### GET /transacoes-alimentos
+---
 
-Descrição: Retorna o histórico de transações de alimentos. - Rota Completa: https://backend-production-09fb.up.railway.app/api/transacoes-alimentos
+## 🎬 Vídeo Demonstrativo
 
-### GET /historicoSaidas
+🎥 [Assistir no Google Drive](https://drive.google.com/file/d/17di-eQq73xvUt2wJR-0uAiEdZFbDUKIE/view?usp=sharing)
 
-Descrição: Retorna o histórico de saídas de alimentos. - Rota Completa: https://backend-production-09fb.up.railway.app/api/historicoSaidas
-
-### GET /avisos
-
-Descrição: Retorna a lista de todos os avisos. - Rota Completa: https://backend-production-09fb.up.railway.app/api/avisos
-
-### GET /campanhas
-
-Descrição: Retorna a lista de todas as campanhas. - Rota Completa: https://backend-production-09fb.up.railway.app/api/campanhas
+---
 
 ## 📋 Licença/License
+
 <a href="https://creativecommons.org/licenses/by/4.0/">Empátech</a> © 2025 by <a href="https://creativecommons.org/licenses/by/4.0/">Rafael</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+
+---
 
 ## 🎓 Referências
 
